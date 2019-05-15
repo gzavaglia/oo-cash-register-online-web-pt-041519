@@ -1,6 +1,6 @@
 require 'pry'
 class CashRegister
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :item
   def initialize(employee_discount = 0)
     @total = 0
     @discount = employee_discount
@@ -9,6 +9,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     new_total = price*quantity
     @total += new_total
+    
   end
   
   def apply_discount
@@ -18,8 +19,8 @@ class CashRegister
       return "After the discount, the total comes to $#{@total.to_i}."
     else
       return "There is no discount to apply."
-      
-      #binding.pry
     end 
   end
+  
+  def items
 end #end of class 
