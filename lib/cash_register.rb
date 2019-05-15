@@ -15,7 +15,7 @@ class CashRegister
     quantity.times do
       @@array_of_items << self.item
     end
-    @last_transaction = 
+    @last_transaction = @total
   end
   
   def apply_discount
