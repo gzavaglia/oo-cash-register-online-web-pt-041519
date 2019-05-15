@@ -12,7 +12,7 @@ class CashRegister
   
   def apply_discount
     if @discount != 1
-      new_total = @total*@discount
+      new_total = @total.to_f*@discount
       puts "The total with the discount is #{new_total}"
     end 
   end
