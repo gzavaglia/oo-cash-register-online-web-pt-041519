@@ -1,7 +1,7 @@
 require 'pry'
 class CashRegister
   attr_accessor :total, :discount
-  def initialize(employee_discount = 1)
+  def initialize(employee_discount = 0)
     @total = 0
     @discount = employee_discount
   end
@@ -12,8 +12,8 @@ class CashRegister
   end
   
   def apply_discount
-    if @discount != 1
-      new_total = @total.to_f*@discount
+    if @discount != 0
+      new_total = @total.to_f-@discount
       puts "The total with the discount is #{new_total}"
       binding.pry
     end 
