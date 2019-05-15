@@ -4,4 +4,8 @@ class CashRegister
     @total = 0
     @discount = employee_discount
   end
+  
+  def add_item()
+    
+  end
 end #end of class 
