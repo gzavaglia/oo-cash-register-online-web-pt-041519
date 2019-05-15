@@ -17,6 +17,7 @@ class CashRegister
       @total = @total*pc_discount    
       return "After the discount, the total comes to $#{@total.to_i}."
     else
+      return "There is no discount to apply."
       
       #binding.pry
     end 
