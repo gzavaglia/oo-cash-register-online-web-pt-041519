@@ -12,6 +12,7 @@ class CashRegister
     new_total = price*quantity
     @total += new_total
     @item = itemx
+    quantity.times_do
     @@array_of_items << self.item
   end
   
