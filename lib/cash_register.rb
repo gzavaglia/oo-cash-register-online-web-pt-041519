@@ -25,6 +25,6 @@ class CashRegister
   end
   # binding.pry
   def items
-    binding.pry
+   @@array_of_items << self.item
   end 
 end #end of class 
