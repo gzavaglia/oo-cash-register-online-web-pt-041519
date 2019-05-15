@@ -13,7 +13,7 @@ class CashRegister
   
   def apply_discount
     if @discount != 0
-      percent_discount  
+      percent_discount
       puts "The total with the discount is #{new_total}"
       # binding.pry
     end 
