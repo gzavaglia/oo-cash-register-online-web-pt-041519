@@ -11,7 +11,7 @@ class CashRegister
     new_total = price*quantity
     @total += new_total
     @item = itemx
-    @@array_of_items << self.item
+    #@@array_of_items << self.item
   end
   
   def apply_discount
@@ -25,6 +25,6 @@ class CashRegister
   end
   # binding.pry
   def items
-   @@array_of_items
+   @@array_of_items << @item
   end 
 end #end of class 
