@@ -15,7 +15,7 @@ class CashRegister
     #if @discount != 0
       pc_discount = 1 - @discount/100.0 
       @total = @total*pc_discount    
-      return "After the discount, the total comes to $#{@total.to_f}."
+      return "After the discount, the total comes to $#{@total.to_i}."
       
       #binding.pry
     #end 
