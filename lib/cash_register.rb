@@ -5,13 +5,14 @@ class CashRegister
   def initialize(employee_discount = 0)
     @total = 0
     @discount = employee_discount
+    @@array_of_items = []
   end
   
   def add_item(itemx, price, quantity = 1)
     new_total = price*quantity
     @total += new_total
     @item = itemx
-    #@@array_of_items << self.item
+    @@array_of_items << self.item
   end
   
   def apply_discount
