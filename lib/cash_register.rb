@@ -15,7 +15,7 @@ class CashRegister
     if @discount != 0
       new_total = @total.to_f-@discount
       puts "The total with the discount is #{new_total}"
-      binding.pry
+      # binding.pry
     end 
   end
 end #end of class 
