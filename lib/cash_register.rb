@@ -1,3 +1,4 @@
+require 'pry'
 class CashRegister
   attr_accessor :total, :discount
   def initialize(employee_discount = 1)
@@ -14,6 +15,7 @@ class CashRegister
     if @discount != 1
       new_total = @total.to_f*@discount
       puts "The total with the discount is #{new_total}"
+      binding.pry
     end 
   end
 end #end of class 
