@@ -15,7 +15,7 @@ class CashRegister
     if @discount != 0
       pc_discount = @discount/100.0 
     
-      puts "The total with the discount is #{new_total}"
+      #puts "The total with the discount is #{new_total}"
       binding.pry
     end 
   end
