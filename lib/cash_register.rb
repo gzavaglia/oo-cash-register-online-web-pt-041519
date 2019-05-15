@@ -11,7 +11,7 @@ class CashRegister
     new_total = price*quantity
     @total += new_total
     @item = itemx
-    array_of_items << itemx
+    #array_of_items << itemx
   end
   
   def apply_discount
