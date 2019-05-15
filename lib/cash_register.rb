@@ -15,7 +15,7 @@ class CashRegister
     #if @discount != 0
       pc_discount = 1 - @discount/100.0 
       @total = @total*pc_discount    
-      puts "The total with the discount is #{@total}"
+      return "The total with the discount is #{@total}"
       
       #binding.pry
     #end 
