@@ -14,5 +14,6 @@ class CashRegister
     if @discount != 1
       new_total = @total*@discount
       puts "The total with the discount is #{new_total}"
+    end 
   end
 end #end of class 
