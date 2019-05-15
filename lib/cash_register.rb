@@ -23,6 +23,8 @@ class CashRegister
       return "There is no discount to apply."
     end 
   end
-  binding.pry
-  # def items
+  # binding.pry
+  def items
+    @@array_of_items
+  end 
 end #end of class 
