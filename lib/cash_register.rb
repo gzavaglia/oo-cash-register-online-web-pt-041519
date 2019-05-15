@@ -12,11 +12,11 @@ class CashRegister
   end
   
   def apply_discount
-    if @discount != 0
+    #if @discount != 0
       pc_discount = 1 - @discount/100.0 
-    
-      #puts "The total with the discount is #{new_total}"
+      new_total = @total*pc_discount    
+      puts "The total with the discount is #{new_total}"
       binding.pry
-    end 
+    #end 
   end
 end #end of class 
