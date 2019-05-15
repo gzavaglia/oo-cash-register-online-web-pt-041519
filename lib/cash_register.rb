@@ -6,7 +6,13 @@ class CashRegister
   end
   
   def add_item(item, price, quantity = 1)
-    new_total = price*quantity*@discount
+    new_total = price*quantity
     @total += new_total
+  end
+  
+  def apply_discount
+    if @discount != 1
+      new_total = @total*@discount
+      puts "The total with the discount is #{new_total}"
   end
 end #end of class 
