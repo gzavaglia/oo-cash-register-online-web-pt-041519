@@ -16,7 +16,7 @@ class CashRegister
       pc_discount = 1 - @discount/100.0 
       new_total = @total*pc_discount    
       puts "The total with the discount is #{new_total}"
-      binding.pry
+      #binding.pry
     #end 
   end
 end #end of class 
