@@ -30,4 +30,8 @@ class CashRegister
   def items
    @@array_of_items
   end 
+  
+  def void_last_transaction
+    
+  end
 end #end of class 
